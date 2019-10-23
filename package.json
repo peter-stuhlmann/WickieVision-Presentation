@@ -1,0 +1,14 @@
+{
+  "name": "wickievision-manual-teacher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "mdx",
+    "mdx-deck",
+    "slides",
+    "presentation",
+    "wickievision"
+  ],
+  "author": "Peter R. Stuhlmann",
+  "license": "MIT"
+}
