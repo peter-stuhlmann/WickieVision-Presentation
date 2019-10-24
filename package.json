@@ -18,7 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "mdx-deck": "^1.10.2"
