@@ -1,6 +1,7 @@
 export { default as theme } from './src/Theme';
 import { Head } from 'mdx-deck';
 import { FootNote } from './src/components/styled-components/Elements';
+import { RegistrationForm } from './src/components/styled-components/RegistrationForm';
 
 <Head>
   <title>Wickie Vision für Lehrer</title>
@@ -37,12 +38,13 @@ Einer unserer Mitarbeiter von GetYourWings wird sich ggf. noch einmal mit Ihnen 
 
 ---
 
+<RegistrationForm>
 <form
   method="post"
   action="#"
 >
 
-Ihre Daten
+### Ihre Daten
 
   <label htmlFor="givenname">Vorname*</label>
   <input type="text" name="givenname" required />
@@ -57,7 +59,7 @@ Ihre Daten
   <label htmlFor="message">Nachricht</label>
   <textarea name="message"></textarea>
 
-Adressdaten der Schule
+### Adressdaten der Schule
 
   <label htmlFor="school">Name der Schule*</label>
   <input type="text" name="school" required />
@@ -70,11 +72,13 @@ Adressdaten der Schule
   <label htmlFor="phone">Telefonnummer*</label>
   <input type="number" name="phone" required />
 
-\* Pflichtfelder
+<FootNote>* Pflichtfelder</FootNote>
 
 <input type="submit" name="submit" value="Absenden" />
 
 </form>
+
+</RegistrationForm>
 
 ---
 
