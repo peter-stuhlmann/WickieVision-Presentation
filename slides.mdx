@@ -5,6 +5,7 @@ import {
   FootNote,
 } from './src/components/styled-components/Elements';
 import { RegistrationForm } from './src/components/styled-components/RegistrationForm';
+import { Email, Phone } from './src/Data';
 
 <Head>
   <title>Wickie Vision für Lehrer</title>
@@ -34,7 +35,7 @@ Dazu benötigen Sie einen verifizierten "Lehrer"-Account, der eine gesonderte Re
 
 ---
 
-Senden Sie dazu bitte eine Mail an /xxx/ oder füllen Sie das Formular¹ auf der nächsten Seite aus.
+Senden Sie dazu bitte eine Mail an <Email /> oder füllen Sie das Formular¹ auf der nächsten Seite aus.
 Einer unserer Mitarbeiter von GetYourWings wird sich ggf. noch einmal mit Ihnen in Verbindung setzen und Ihren Account zeitnah freischalten.
 
 <FootNote>
@@ -140,8 +141,8 @@ Ist ein Artikel zu fehlerhaft geschrieben oder wurde er versehentlich zur Überp
 ---
 
 <AlignCenter fontSize="30px">
-  Bei Fragen kontaktieren Sie uns gerne per Mail an /xxx/ oder telefonisch unter
-  der /xxx/.
+  Bei Fragen kontaktieren Sie uns gerne per Mail an <Email /> oder telefonisch
+  unter der <Phone />.
 </AlignCenter>
 
 <AlignCenter fontSize="40px">
