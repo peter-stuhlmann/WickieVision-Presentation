@@ -22,6 +22,16 @@ const StyledGlobalStyles = createGlobalStyle`
       text-align: center;
       font-weight: 400;
     }
+
+    a {
+      color: #57aedc;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        color: #e83c2c
+      }
+    }
   }
 `;
 
