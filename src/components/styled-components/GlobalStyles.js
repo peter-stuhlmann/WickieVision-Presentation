@@ -32,6 +32,13 @@ const StyledGlobalStyles = createGlobalStyle`
         color: #e83c2c
       }
     }
+
+    img {
+      max-width: 100%
+    &.entry {
+      max-width: 100%;
+      max-height: 60vh
+    }
   }
 `;
 
