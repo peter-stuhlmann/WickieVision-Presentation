@@ -1,5 +1,6 @@
 export { default as theme } from './src/Theme';
 import { Head } from 'mdx-deck';
+import { FootNote } from './src/components/styled-components/Elements';
 
 <Head>
   <title>Wickie Vision für Lehrer</title>
@@ -7,12 +8,127 @@ import { Head } from 'mdx-deck';
   <meta name="description" content="WickieVision-Anleitung für Lehrer" />
 </Head>
 
-Lorem ipsum dolor sit amet #1
+<img src={require('file-loader!./src/img/wickievision-logo.png')} />
+
+## - Anleitung für LehrerInnen -
 
 ---
 
-Lorem ipsum dolor sit amet #2
+## 1. Registrierung
+
+Richten Sie sich einen WickieVision-Account ein
 
 ---
 
-Lorem ipsum dolor sit amet #3
+Um Artikel schreiben und bearbeiten zu dürfen, benötigen SchülerInnen einen WickieVision-Account.
+
+Ihnen als LehrerIn möchten wir zusätzlich die Möglichkeit bieten, Artikel von Schülern zu korrigieren und schließlich zu veröffentlichen.
+Dazu benötigen Sie einen verifizierten "Lehrer"-Account, der eine gesonderte Registrierung erfordert.
+
+---
+
+Senden Sie dazu bitte eine Mail an /xxx/ oder füllen Sie das Formular¹ auf der nächsten Seite aus.
+Einer unserer Mitarbeiter von GetYourWings wird sich ggf. noch einmal mit Ihnen in Verbindung setzen und Ihren Account zeitnah freischalten.
+
+<FootNote>
+  ¹ Bitte beachten Sie, dass diese Option nur in der Online-Live-Ansicht und
+  nicht in der pdf-Version zur Verfügung steht.
+</FootNote>
+
+---
+
+<form
+  method="post"
+  action="#"
+>
+
+Ihre Daten
+
+  <label htmlFor="givenname">Vorname*</label>
+  <input type="text" name="givenname" required />
+  <label htmlFor="surname">Nachname*</label>
+  <input type="text" name="surname" required />
+  <label htmlFor="email">E-Mail-Adresse*</label>
+  <input type="email" name="email" required />
+  <label htmlFor="phone-private">Telefonnummer*</label>
+  <input type="number" name="phone-private" required />
+  <label htmlFor="subjectarea">Fachrichtung*</label>
+  <input type="text" name="subjectarea" required />
+  <label htmlFor="message">Nachricht</label>
+  <textarea name="message"></textarea>
+
+Adressdaten der Schule
+
+  <label htmlFor="school">Name der Schule*</label>
+  <input type="text" name="school" required />
+  <label htmlFor="address">Straße/Nr.*</label>
+  <input type="text" name="address" required />
+  <label htmlFor="zip">PLZ*</label>
+  <input type="number" name="zip" required />
+  <label htmlFor="city">Ort*</label>
+  <input type="text" name="city" required />
+  <label htmlFor="phone">Telefonnummer*</label>
+  <input type="number" name="phone" required />
+
+\* Pflichtfelder
+
+<input type="submit" name="submit" value="Absenden" />
+
+</form>
+
+---
+
+Um sicherzugehen, dass Sie berechtigt sind, einen verifizierten "Lehrer"-Account zu nutzen, wird sich einer unserer Mitarbeiter ggf. persönlich mit Ihnen in Verbindung setzen.
+
+Nach erfolgreicher Prüfung wird Ihr Account freigeschaltet.
+
+Ihre Zugangsdaten werden Ihnen per Mail zugesendet. Aus Sicherheitsgründen werden Ihr Benutzername und das Passwort in separaten Mails gesendet.
+
+---
+
+## 2. Artikel von Schülern überprüfen und freigeben (veröffentlichen)
+
+---
+
+Nachdem SchülerInnen einen Artikel erstellt oder einen bereits veröffentlichten Artikel bearbeitet haben, muss dieser von einer Lehrkraft überprüft, ggf. korrigiert und schließlich freigegeben werden.  
+Erst dann ist der Artikel bzw. die Änderung für jeden Besucher sichtbar.
+
+---
+
+Um einen Artikel zu überprüfen, loggen Sie sich bitte mit Ihren Zugangsdaten unter [wickievision.de/login](https://wickievision.de/login) ein.
+
+Nachdem Sie sich eingeloggt haben, klicken Sie bitte in der Footer-Navigation auf den Link [Dashboard](https://wickievision.de/wp-admin/edit.php?post_type=pauple_helpie).
+
+---
+
+Sie gelangen auf eine Seite, auf der Sie eine Liste mit allen Artikeln finden, veröffentlichte aber auch unveröffentlichte.
+
+Im folgenden Screenshot sehen Sie einen unveröffentlichten Artikel, markiert mit dem Zusatz _- Ausstehend_.
+
+---
+
+<img src={require('file-loader!./src/img/post-list.png')} />
+
+---
+
+Klicken Sie nun auf diesen Listeneintrag, gelangen Sie direkt zum Editiermodus des Artikels.
+
+---
+
+<img src={require('file-loader!./src/img/post.png')} />
+
+---
+
+Bitte lesen Sie den Artikel und korrigieren Sie ggf. Rechtschreibfehler oder ähnliches.
+
+Wählen Sie bitte unbedingt am rechten Rand eine Kategorie aus, in die der Artikel am ehesten passt. Es sind auch mehrere Auswahlen möglich.
+
+Anschließend klicken Sie auf den Button _Veröffentlichen_. Der Artikel wird nun für jeden Besucher auf WickieVision sichtbar sein.
+
+Ist ein Artikel zu fehlerhaft geschrieben oder wurde er versehentlich zur Überprüfung eingereicht und eine Korrektur wäre zu zeitaufwendig, können Sie den Artikel in den Papierkorb verschieben und damit nicht veröffentlichen.
+
+---
+
+Bei Fragen kontaktieren Sie uns gerne per Mail an /xxx/ oder telefonisch unter der /xxx/.
+
+[wickievision.de](https://wickievision.de/)
