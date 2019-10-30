@@ -1,11 +1,14 @@
 {
-  "name": "wickievision-manual-teacher",
+  "name": "wickievision-instruction",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck slides.mdx",
-    "build": "mdx-deck build slides.mdx --no-html",
-    "pdf": "mdx-deck pdf slides.mdx"
+    "start-teachers": "mdx-deck teachers.mdx",
+    "build-teachers": "mdx-deck build teachers.mdx --no-html",
+    "pdf-teachers": "mdx-deck pdf teachers.mdx",
+    "start-students": "mdx-deck students.mdx",
+    "build-students": "mdx-deck build students.mdx --no-html",
+    "pdf-students": "mdx-deck pdf students.mdx"
   },
   "keywords": [
     "mdx",
