@@ -5,11 +5,15 @@ import {
   FootNote,
 } from './src/components/styled-components/Elements';
 import { RegistrationForm } from './src/components/styled-components/RegistrationForm';
-import { Email, Phone } from './src/Data';
+import { Address, Email, Phone } from './src/Data';
+{
+  console.log(
+    'Präsentation entwickelt von \nPeter R. Stuhlmann\npeter-stuhlmann-webentwicklung.de'
+  );
+}
 
 <Head>
   <title>Wickie Vision für Lehrer</title>
-  <link rel="icon" href="./src/img/favicon.jpg" sizes="32x32" />
   <meta name="description" content="WickieVision-Anleitung für Lehrer" />
 </Head>
 
@@ -18,7 +22,7 @@ import { Email, Phone } from './src/Data';
   className="entry"
 />
 
-## - Anleitung für LehrerInnen -
+## - Anleitung für Lehrkräfte -
 
 ---
 
@@ -30,43 +34,43 @@ Richten Sie sich einen WickieVision-Account ein
 
 Um Artikel schreiben und bearbeiten zu dürfen, benötigen SchülerInnen einen WickieVision-Account.
 
-Ihnen als LehrerIn möchten wir zusätzlich die Möglichkeit bieten, Artikel von Schülern zu korrigieren und schließlich zu veröffentlichen.
-Dazu benötigen Sie einen verifizierten "Lehrer"-Account, der eine gesonderte Registrierung erfordert.
+Ihnen als Lehrkraft möchten wir zusätzlich die Möglichkeit bieten, Artikel von SchülerInnen zu korrigieren und zu veröffentlichen. Dazu benötigen Sie einen verifizierten Account für Lehrkräfte.
 
 ---
 
-Um einen hohen Qualitätsstandard und vor allem die Sicherheit zu gewährleisten, bitten wir Sie, das PDF-Dokument auszudrucken, auszufüllen, zu unterzeichnen und an uns per Mail an <Email /> zu übersenden.
+Drucken Sie dazu bitte das Anmelde-Formular aus, füllen Sie die freien Felder aus, unterzeichnen Sie diese und versehen Sie diese mit einem Stempel Ihrer Schule, wenn vorhanden. Schicken Sie das Dokument bitte per E-Mail an: <Email /> oder per Post an: <Address />. Wir schalten Ihren Account für Sie frei.
 
 <AlignCenter fontSize="30px">
-  <a href="#">Anmelde-Formular (pdf)</a>
+  <a href="https://wickievision.de/wp-content/uploads/2019/10/wickievision-anmeldeformular-lehrer.pdf">
+    Anmelde-Formular (pdf)
+  </a>
 </AlignCenter>
 
 ---
 
-Nach erfolgreicher Prüfung wird Ihr Account freigeschaltet.
-
-Ihre Zugangsdaten werden Ihnen per Mail mitgeteilt. Aus Sicherheitsgründen werden Ihr Benutzername und das Passwort separat zugesendet.
+Ihre Einlogdaten schicken wir Ihnen per E-Mail zu, aus Datenschutz- und Sicherheitsgründen erhalten Sie Benutzernamen und Passwort in separaten E-Mails.
 
 ---
 
-## 2. Artikel von Schülern überprüfen und freigeben (veröffentlichen)
+## 2. Artikel von SchülerInnen überprüfen und veröffentlichen
 
 ---
 
-Nachdem SchülerInnen einen Artikel erstellt oder einen bereits veröffentlichten Artikel bearbeitet haben, muss dieser von einer Lehrkraft überprüft, ggf. korrigiert und schließlich freigegeben werden.  
-Erst dann ist der Artikel bzw. die Änderung für jeden Besucher sichtbar.
+Nachdem SchülerInnen einen Beitrag erstellt oder einen bereits veröffentlichten Beitrag bearbeitet haben, muss dieser von einer Lehrkraft überprüft und schließlich freigegeben werden.
+
+Erst dann sind der Beitrag bzw. die Änderung sichtbar.
 
 ---
 
-Um einen Artikel zu überprüfen, loggen Sie sich bitte mit Ihren Zugangsdaten unter [wickievision.de/login](https://wickievision.de/login) ein.
+Um einen Beitrag zu überprüfen, loggen Sie sich bitte mit Ihren Zugangsdaten unter [wickievision.de/login](https://wickievision.de/login) ein.
 
 Nachdem Sie sich eingeloggt haben, klicken Sie bitte in der Footer-Navigation auf den Link [Dashboard](https://wickievision.de/wp-admin/edit.php?post_type=pauple_helpie).
 
 ---
 
-Sie gelangen auf eine Seite, auf der Sie eine Liste mit allen Artikeln finden, veröffentlichte aber auch unveröffentlichte.
+Sie gelangen nun zu einer Übersicht aller Beiträge - veröffentlichter und unveröffentlichter.
 
-Im folgenden Screenshot sehen Sie einen unveröffentlichten Artikel, markiert mit dem Zusatz _- Ausstehend_.
+Im folgenden Bild sehen Sie einen unveröffentlichten Beitrag unter _Artikel_ - markiert mit dem Zusatz _Ausstehend_.
 
 ---
 
@@ -74,7 +78,7 @@ Im folgenden Screenshot sehen Sie einen unveröffentlichten Artikel, markiert mi
 
 ---
 
-Klicken Sie nun auf diesen Listeneintrag, gelangen Sie direkt zum Editiermodus des Artikels.
+Wenn Sie nun auf diesen Listeneintrag klicken, können Sie diesen Beitrag bearbeiten.
 
 ---
 
@@ -82,21 +86,25 @@ Klicken Sie nun auf diesen Listeneintrag, gelangen Sie direkt zum Editiermodus d
 
 ---
 
-Bitte lesen Sie den Artikel und korrigieren Sie ggf. Rechtschreibfehler oder ähnliches.
+Bitte lesen Sie den Beitrag und korrigieren Sie ggfs.
 
-Wählen Sie bitte unbedingt am rechten Rand eine Kategorie aus, in die der Artikel am ehesten passt. Es sind auch mehrere Auswahlen möglich.
+Zum Hochladen bzw. Einfügen von Bildern, Fotos, Tondateien oder Videos klicken Sie den Button _Dateien hinzufügen_. Dort wählen Sie ein vorhandene Datei aus oder laden eigene Dateien hoch über _Datei hochladen_ > _Dateien auswählen_ – nun wählen Sie die Datei von Ihrem PC, Smartphone oder Tablet aus und laden sie hoch. Klicken Sie anschließend den Button _In den Beitrag einfügen_.
 
-Anschließend klicken Sie auf den Button _Veröffentlichen_. Der Artikel wird nun für jeden Besucher auf WickieVision sichtbar sein.
+Fügen Sie bitte am rechten Rand eine Kategorie hinzu, in die der Beitrag am ehesten passt. Es sind auch mehrere Begriffe möglich.
 
-Ist ein Artikel zu fehlerhaft geschrieben oder wurde er versehentlich zur Überprüfung eingereicht und eine Korrektur wäre zu zeitaufwendig, können Sie den Artikel in den Papierkorb verschieben und damit nicht veröffentlichen.
+---
+
+Anschließend klicken Sie auf _Veröffentlichen_. Der Beitrag ist nun für jeden Besucher auf WickieVision sichtbar.
+
+Alternativ kann ein Beitrag zur Löschung in den Papierkorb verschoben werden.
 
 ---
 
 <AlignCenter fontSize="30px">
-  Bei Fragen kontaktieren Sie uns gerne per Mail an <Email /> oder telefonisch
-  unter der <Phone />.
+  Bei Fragen kontaktieren Sie uns gerne per E-Mail <Email /> oder telefonisch{' '}
+  <Phone />.
 </AlignCenter>
 
 <AlignCenter fontSize="40px">
-  <a href="https://wickievision.de/">wickievision.de</a>
+  <a href="https://wickievision.de/">www.wickievision.de</a>
 </AlignCenter>
