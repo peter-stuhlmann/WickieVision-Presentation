@@ -19,10 +19,20 @@ $ npm i
 
 ## How run the presentation
 
+### Presentation for teachers
+
 ```
-$ npm start         // start the presentation locally
-$ npm run build     // bundles the files in dist/
-$ npm run pdf       // creates a pdf file of the slides
+$ npm run start-teachers         // start the presentation locally
+$ npm run build-teachers         // bundles the files in dist/
+$ npm run pdf-teachers           // creates a pdf file of the slides
+```
+
+### Presentation for students
+
+```
+$ npm run start-students         // start the presentation locally
+$ npm run build-students         // bundles the files in dist/
+$ npm run pdf-students           // creates a pdf file of the slides
 ```
 
 ## License
